@@ -12,7 +12,6 @@ test('test', () => {
     render(<ProjectCard item={'project1'}/>)
     const projectCardElement = screen.getByTestId('projectcard')
     expect(projectCardElement).toBeInTheDocument()
-
 })
 
 test('matches snapshot', () => {
