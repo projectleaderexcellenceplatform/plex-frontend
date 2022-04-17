@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import {render, screen, cleanup} from "@testing-library/react";
 import renderer from 'react-test-renderer'
-import ProjectListCard from "../ProjectListCard";
+import StudentListCard from "../StudentListCard";
 
 afterEach(() => {
     cleanup();
@@ -46,6 +46,6 @@ test('matches snapshot', () => {
         }
     ]
 
-    const tree = renderer.create(<ProjectListCard project={project}/>).toJSON();
+    const tree = renderer.create(<StudentListCard project={project}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });
