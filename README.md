@@ -1,5 +1,8 @@
-<h1 align="center">Hi 👋, We're the PLeX heroes</h1>
+# PlexBackend
+![GitHub issues](https://img.shields.io/github/issues/projectleaderexcellenceplatform/plex-frontend)
+![GitHub issues-pr](https://img.shields.io/github/issues-pr/projectleaderexcellenceplatform/plex-frontend)
 
+<h1 align="center">Hi 👋, We're the PLeX heroes</h1>
 ## Plex Dashboard
 The purpose of the PLeX (Project Leader eXcellence platform) dashboard is to increasingly support and unburden teachers in viewing projects and creating project lists. In addition, it is important that students can easily choose the top 3 of the projects offered in an overview, so that the project leader can see their preference.
 
