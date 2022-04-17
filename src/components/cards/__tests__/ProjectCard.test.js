@@ -12,10 +12,11 @@ test('test', () => {
     render(<ProjectCard item={'project1'}/>)
     const projectCardElement = screen.getByTestId('projectcard')
     expect(projectCardElement).toBeInTheDocument()
+
 })
 
 test('matches snapshot', () => {
-    const title = "project1"
+    const title = "project1";
     const tree = renderer.create(<ProjectCard item={title}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });
