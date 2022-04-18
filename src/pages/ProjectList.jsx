@@ -35,6 +35,7 @@ const ProjectList = ({
 	const [filterSelect, setFilterSelect] = useState();
 	const [popUp, setPopUp] = useState(false);
 	const [popUp3, setPopUp3] = useState(false);
+	const [popUp4, setPopUp4] = useState(false);
 
 	const [activeBtn, setActiveBtn] = useState(0);
 	const [activeSort, setActiveSort] = useState(0);
@@ -44,6 +45,12 @@ const ProjectList = ({
 	if (popUp3) {
 		setTimeout(() => {
 			setPopUp3(false);
+		}, 1000);
+	}
+
+	if (popUp4) {
+		setTimeout(() => {
+			setPopUp4(false);
 		}, 1000);
 	}
 
@@ -129,11 +136,25 @@ const ProjectList = ({
 				""}
 			{/* POP-UP */}
 
+			{/* POP-UP */}
+			{(popUp4 && (
+					<PopUp title="Project list not saved" setPopUp={setPopUp4} alert>
+						<div className="d-flex flex-column justify-content-center align-items-center">
+							<h4 className="fw700 color1 mt-4">
+								Please select projects and fill in a projectname
+							</h4>
+						</div>
+					</PopUp>
+				)) ||
+				""}
+			{/* POP-UP */}
+
 			<div className="inner-right-body">
 				{/* TOP SEARCH AND LIST */}
 				<ProjectListDisplay
 					setPopUp={setPopUp}
 					setPopUp3={setPopUp3}
+					setPopUp4={setPopUp4}
 					selectedProjectList={prodjectList}
 					deleteToProjectList={deleteToProjectList}
 				/>
