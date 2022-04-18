@@ -32,7 +32,6 @@ const ProjectListDisplay = ({
         })
     }
 
-    //TODO ifempty
     const submitHandler = () => {
             axios.post('http://localhost:8080/api/v1/projectlist/add', completeProjectlist)
                 .then(res => {
