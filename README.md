@@ -1,4 +1,5 @@
 # PlexBackend
+![workflow](https://github.com/projectleaderexcellenceplatform/plex-frontend/actions/workflows/test.yml/badge.svg)
 ![GitHub issues](https://img.shields.io/github/issues/projectleaderexcellenceplatform/plex-frontend)
 ![GitHub issues-pr](https://img.shields.io/github/issues-pr/projectleaderexcellenceplatform/plex-frontend)
 
