@@ -8,7 +8,7 @@ const ProjectListCard = (props) => {
     const project = props.project;
 
     return (
-        <div>
+        <div data-testid={"projectlistcard"}>
             {project
                 .sort((a, b) => a.id > b.id ? 1 : -1)
                 .map((item) => {
