@@ -8,6 +8,7 @@ import axios from "axios";
 const ProjectListDisplay = ({
                                 setPopUp,
                                 setPopUp3,
+                                setPopUp4,
                                 selectedProjectList,
                                 deleteToProjectList,
                             }) => {
@@ -32,14 +33,14 @@ const ProjectListDisplay = ({
     }
 
     const submitHandler = () => {
-        axios.post('http://localhost:8080/api/v1/projectlist/add', completeProjectlist)
-            .then(res => {
-                console.log(res)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }
+            axios.post('http://localhost:8080/api/v1/projectlist/add', completeProjectlist)
+                .then(res => {
+                    console.log(res)
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }
 
     console.log(completeProjectlist)
 
@@ -67,10 +68,13 @@ const ProjectListDisplay = ({
                     <div className="d-flex">
                         <button
                             onClick={() => {
-                                setPopUp3(true)
                                 addProjectIds()
+                                if (!projectlistName || completeProjectlist.projects.length === 0) {
+                                    setPopUp4(true)
+                                } else {
+                                setPopUp3(true)
                                 submitHandler()
-                            }}
+                            }}}
                             className="bg-color2 w-100 border-0 text-white fw600"
                         >
                             Save Projectlist
