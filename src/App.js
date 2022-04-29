@@ -14,6 +14,7 @@ import ProjectList from "./pages/ProjectList";
 import Dashboard from "./pages/Dashboard";
 import Student from "./pages/Student";
 import Setting from "./pages/Setting";
+import Choice from "./pages/Choice";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 				<Route exact path="/project_list" element={<ProjectList />}></Route>
 				<Route exact path="/student" element={<Student />}></Route>
 				<Route exact path="/setting" element={<Setting />}></Route>
+				<Route exact path="/choice" element={<Choice />}></Route>
 			</Routes>
 		</Provider>
 	);

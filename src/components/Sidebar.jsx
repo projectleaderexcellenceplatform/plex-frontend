@@ -5,12 +5,14 @@ import i1 from "../assets/images/nav_icons/i1.svg";
 import i2 from "../assets/images/nav_icons/i2.svg";
 import i3 from "../assets/images/nav_icons/i3.svg";
 import i4 from "../assets/images/nav_icons/i4.svg";
+import i5 from "../assets/images/nav_icons/i5.svg";
 
 // ACTIVE NAV
 import a_i1 from "../assets/images/active_nav/i1.svg";
 import a_i2 from "../assets/images/active_nav/i2.svg";
 import a_i3 from "../assets/images/active_nav/i3.svg";
 import a_i4 from "../assets/images/active_nav/i4.svg";
+import a_i5 from "../assets/images/active_nav/i5.svg";
 
 const Sidebar = () => {
 	const pathname = window.location.pathname;
@@ -40,6 +42,12 @@ const Sidebar = () => {
 			link: "/student",
 			tooltipText: "Hi, Student",
 		},
+		{
+			image: i5,
+			imageA: a_i5,
+			link: "/choice",
+			tooltipText: "Choice"
+		}
 	];
 
 	return (
