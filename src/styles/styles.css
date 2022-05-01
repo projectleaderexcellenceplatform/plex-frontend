@@ -221,10 +221,6 @@ body {
   magin-left: 20px
 }
 
-.floater {
-  float: left;
-}
-
 .initials {
   width: 60px;
   height: 60px;
@@ -1003,12 +999,6 @@ h5 {
   border-style: dashed;
   border-radius: 7px;
 }
-
-.student-search-container .position-relative {
-
-
-}
-
 
 .student-search-container .search-icon {
   position: absolute;

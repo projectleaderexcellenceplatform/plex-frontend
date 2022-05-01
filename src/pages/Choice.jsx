@@ -26,10 +26,12 @@ const Choice = () => {
                 <StudentSearch/>
             </div>
 
+            {/* FILTER */}
             <div className={"project-list-b-upper"}>
                 <Filters></Filters>
             </div>
 
+            {/* LIST */}
             <div className={"project-list-b"}>
                 <div className={"row pt-4 gy-4"}>
                     <div className={"col-12 w-100"}>
