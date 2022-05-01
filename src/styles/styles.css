@@ -217,6 +217,23 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
+.marginleft {
+  magin-left: 20px
+}
+
+.floater {
+  float: left;
+}
+
+.initials {
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 23px;
+  text-align: center;
+}
+
 .container-fluid {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -296,6 +313,7 @@ img,
 svg {
   vertical-align: middle;
 }
+
 
 .px-2 {
   padding-right: 0.5rem !important;
@@ -608,6 +626,13 @@ h6 {
   -webkit-box-flex: 0;
   flex: 0 0 auto;
   width: 41.66666667%;
+}
+
+.col-1 {
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: 10%;
 }
 
 .col-2 {
@@ -981,12 +1006,13 @@ h5 {
 
 .student-search-container .position-relative {
 
+
 }
 
 
 .student-search-container .search-icon {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1047,7 +1073,7 @@ h5 {
 
 .inner-right-body {
   min-height: 1px;
-  height: 20%;
+  height: 8%;
 }
 
 .inner-right-body .project-list-b-upper {

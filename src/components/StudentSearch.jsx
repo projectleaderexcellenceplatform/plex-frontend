@@ -7,7 +7,6 @@ const StudentSearch = () => {
     return (
         <div className={"container-fluid student-search-container p-3"}>
             <div className={"row"}>
-                <div className={"col-8"}>
                     <div className="inp-cont w-100 position-relative">
                         <input
                             type="text"
@@ -20,9 +19,6 @@ const StudentSearch = () => {
                         </label>
 
                         <img className={"search-icon"} src={search} alt={""}/>
-
-
-                    </div>
                 </div>
             </div>
 
