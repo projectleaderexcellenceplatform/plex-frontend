@@ -8,14 +8,26 @@ import StudentSearch from "../components/StudentSearch";
 import Filters from "../components/Filters";
 import CardList from "../components/cards/CardList";
 import ChoiceListCard from "../components/cards/ChoiceListCard";
+import axios from "axios";
+import StudentListCard from "../components/cards/StudentListCard";
 
 
 const Choice = () => {
 
-    const [activeBtn, setActiveBtn] = useState(0);
-    const [activeSort, setActiveSort] = useState(0);
+    const [choices, setChoices] = useState([]);
 
-    const tagFilters = ["All", "UX/UI", "Code", "Research"];
+    useEffect(() => {
+        axios
+            .get("http://localhost:8080/api/v1/student")
+            .then(res => {
+                console.log(res)
+                setChoices(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
+
 
 
     return (
@@ -35,7 +47,13 @@ const Choice = () => {
             <div className={"project-list-b"}>
                 <div className={"row pt-4 gy-4"}>
                     <div className={"col-12 w-100"}>
-                        <ChoiceListCard/>
+                        {choices
+                            .map((item) => {
+                                return (
+                                    <ChoiceListCard student={item}/>
+                                )
+                            })}
+
                     </div>
                 </div>
             </div>
