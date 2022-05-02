@@ -27,7 +27,7 @@ const Choice = () => {
             </div>
 
             {/* FILTER */}
-            <div className={"project-list-b-upper"}>
+            <div className={"mt-4 project-list-b-upper"}>
                 <Filters></Filters>
             </div>
 
