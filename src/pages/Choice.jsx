@@ -23,20 +23,22 @@ const Choice = () => {
             </div>
 
             {/* FILTER */}
-            <div className={"mt-4 project-list-b-upper"}>
+            <div>
                 <Filters></Filters>
             </div>
 
             {/* LIST */}
-            <div className={"project-list-b"}>
-                <div className={"row pt-4 gy-4"}>
-                    <div className={"col-12 w-100"}>
-                        <ChoiceListCard/>
+            <div className={"inner-right-body"}>
+                <div className={"student-list-container"}>
+                    <div className={"row pt-4 gy-4"}>
+                        <div className={"col-12 w-100"}>
 
+                            <ChoiceListCard/>
+
+                        </div>
                     </div>
                 </div>
             </div>
-
 
         </Layout>
     )

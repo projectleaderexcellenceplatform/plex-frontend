@@ -5,16 +5,16 @@ import search from "../assets/images/icons/search.svg"
 const StudentSearch = () => {
 
     return (
-        <div className={"container-fluid student-search-container p-3"}>
+        <div className={"student-search-container"}>
             <div className={"row"}>
-                    <div className="inp-cont w-100 position-relative">
+                    <div className="inp-cont">
                         <input
                             type="text"
                             name=""
                             id=""
                             className="w-100 px-3"
                         />
-                        <label className="fw500 px-2 color1" htmlFor="">
+                        <label className="" htmlFor="">
                             Search student
                         </label>
 
@@ -26,5 +26,7 @@ const StudentSearch = () => {
 
     )
 }
+
+// fw500 px-2 color1
 
 export default StudentSearch;
