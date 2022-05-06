@@ -6,25 +6,21 @@ import Layout from "../layout";
 // IMPORTS
 import StudentSearch from "../components/StudentSearch";
 import Filters from "../components/Filters";
-import CardList from "../components/cards/CardList";
-import ChoiceListCard from "../components/cards/ChoiceListCard";
-import axios from "axios";
-import StudentListCard from "../components/cards/StudentListCard";
-import ChoiceListGrid from "../components/cards/ChoiceListGrid";
-
+import StudentDetailsCard from "../components/cards/StudentDetailsCard";
+import StudentSearchSendDetails from "../components/StudentSearchSendDetails";
 
 const Choice = () => {
     const [activeBtn, setActiveBtn] = useState(0);
     const [activeSort, setActiveSort] = useState(0);
     const [latestProjects, setLatestProjects] = useState([])
-    const filterOptions = ["S3", "S4", "S5"]
+    const filterOptions = ["All", "UX/UI", "Code", "Research"]
 
     return (
         <Layout>
 
             <div className={"inner-right-body"}>
                 {/* TOP SEARCH */}
-                <StudentSearch/>
+                <StudentSearchSendDetails/>
             </div>
 
             {/* FILTER */}
@@ -41,13 +37,9 @@ const Choice = () => {
             <div className={"inner-right-body"}>
                 <div className={"student-list-container"}>
                     <div className={"row pt-4 gy-4"}>
-                        <div className={"col-3"}>
-                            <ChoiceListGrid/>
+                        <div className={"col-12 w-100"}>
+                            <StudentDetailsCard/>
                         </div>
-
-                        {/*<div className={"col-12 w-100"}>*/}
-                        {/*    <ChoiceList/>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
             </div>

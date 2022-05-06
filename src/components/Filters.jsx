@@ -11,8 +11,9 @@ const Filter = ({
 	setActiveSort,
 	studentFilter,
 	handleChange,
+	filterOptions
 }) => {
-	const filter_buttons = ["All", "UX/UI", "Code", "Research"];
+	const filter_buttons = filterOptions;
 
 	return (
 		<div className="filter-container d-flex justify-content-between align-items-end pb-2">

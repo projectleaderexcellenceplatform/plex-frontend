@@ -1131,6 +1131,76 @@ h5 {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.student-search-container-send-details {
+  background-color: #eceef2;
+  border: 1px solid #1f1d59;
+  border-style: dashed;
+  border-radius: 7px;
+  padding: 1rem;
+
+  input {
+    border: 1px solid #1f1d59;
+    border-radius: 8px;
+    height: 40px;
+  }
+
+  label {
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    font-size: 15px;
+    background: linear-gradient(180deg, rgb(236, 238, 242) 50%, rgb(255, 255, 255) 50%);
+    font-weight: 500;
+  }
+
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+
+  .inp-cont {
+    height: 40px;
+    width: 75%;
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .send-details {
+    display: flex;
+    width: auto;
+    height: 40px;
+  }
+
+  .send-details-card {
+    background-color: #f9fcff;
+    margin-left: 10px;
+    padding: 10px 10px 10px;
+
+    border-radius: 10px;
+    color: #1f1d59;
+    font-weight: 500;
+    font-size: 95%;
+  }
+
+  .send-details-card-date{
+    font-weight: 600;
+  }
+
 
 
 }
@@ -1176,6 +1246,7 @@ h5 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
   .student-card-inner {
     --bs-gutter-x: 1.5rem;
@@ -1184,43 +1255,229 @@ h5 {
     flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
 
     .circle-initials {
       position: relative;
-      left: 30px;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+      width: 65px;
+      height: 65px;
+      line-height: 65px;
       border-radius: 50%;
       font-size: 17px;
       font-weight: 500;
       color: #fff;
       text-align: center;
       background: #1f1d59;
+      margin-left: 1.5%;
     }
 
     .student-name {
       position: relative;
-      left: 100px;
       margin-bottom: 0rem;
       font-size: 0.875rem;
       color: #1f1d59;
       font-weight: 800;
+      margin-right: auto;
+      margin-left: 7%;
+    }
+
+    .vertical-line {
+      border-left: 1px solid;
+      color: #e2e6eb;
+      margin-right: auto;
+      margin-left: 5%;
     }
 
     .information {
       position: relative;
-      left: 500px;
       margin-bottom: 0rem;
       display: flex;
+      margin-right: auto;
+      margin-left: 7%;
+    }
+
+    .student-details {
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: 3rem;
+
+    }
+
+    .student-details-inner {
+      background-color: #e2e6eb;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      border-radius: 0.3rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1f1d59;
+      margin-right: 0.5rem;
+    }
+
+    .choice-status-positive {
+      margin-left: auto;
+      margin-right: 1.5%;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #22ad7a80;
+      border: 2.5px solid #1f1d59;
     }
 
   }
 
 
 }
+
+.student-card-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  .student-card-inner {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+
+    .project-image {
+      position: relative;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      margin-left: 1.5%;
+    }
+
+    .project-name {
+      position: relative;
+      margin-bottom: 0rem;
+      font-size: 0.875rem;
+      color: #1f1d59;
+      font-weight: 800;
+      margin-right: auto;
+      margin-left: 4%;
+    }
+
+    .vertical-line {
+      border-left: 1px solid;
+      color: #e2e6eb;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .information {
+      position: relative;
+      display: flex;
+      margin-right: auto;
+      margin-left: 7%;
+    }
+
+    .project-details {
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: 3rem;
+      margin-right: auto;
+    }
+
+    .project-details-inner {
+      background-color: #e2e6eb;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      border-radius: 0.3rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1f1d59;
+      margin-left: auto;
+      margin-right: 0.5rem;
+    }
+
+    .group-details {
+      color: #1f1d59;
+      font-weight: 600;
+      display: flex;
+    }
+
+    .group-details-icon {
+      margin-left: 5px;
+    }
+
+    .priority {
+      background-color: #22ad7a;
+      --bs-text-opacity: 1;
+      color: #fff !important;
+      width: 30px;
+      height: 31px;
+      font-weight: 600;
+      border-radius: 9.6px;
+      text-align: center;
+      line-height: 31px;
+      margin-right: 2%;
+      margin-left: auto;
+    }
+
+
+  }
+
+
+}
+
+.student-grid {
+  height: 276px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+
+  .circle-initials {
+    position: relative;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: #1f1d59;
+    margin-left: 5%;
+  }
+
+  .picture {
+    height: 50px;
+  }
+}
+
 
 // POP-UP END
 
