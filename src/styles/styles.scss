@@ -1197,10 +1197,9 @@ h5 {
     font-size: 95%;
   }
 
-  .send-details-card-date{
+  .send-details-card-date {
     font-weight: 600;
   }
-
 
 
 }
@@ -1323,7 +1322,7 @@ h5 {
       height: 25px;
       border-radius: 50%;
       background-color: #22ad7a80;
-      border: 2.5px solid #1f1d59;
+      border: 2px solid #1f1d59;
     }
 
   }
@@ -1434,7 +1433,7 @@ h5 {
 }
 
 .student-grid {
-  height: 276px;
+  height: 220px;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1445,8 +1444,8 @@ h5 {
   flex-direction: column;
   display: flex;
 
-  .row {
-    --bs-gutter-x: 1.5rem;
+  .row-up {
+    --bs-gutter-x: 3 srem;
     --bs-gutter-y: 0;
     display: -ms-flexbox;
     display: flex;
@@ -1456,6 +1455,20 @@ h5 {
     margin-right: calc(-0.5 * var(--bs-gutter-x));
     margin-left: calc(-0.5 * var(--bs-gutter-x));
   }
+
+  .row-down {
+    position: relative;
+    bottom: 5%;
+    --bs-gutter-x: 3 srem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+
 
   .circle-initials {
     position: relative;
@@ -1470,13 +1483,71 @@ h5 {
     color: #fff;
     text-align: center;
     background: #1f1d59;
-    margin-left: 5%;
+    margin-left: 2%;
   }
 
   .picture {
-    height: 50px;
+    width: 85px;
+    margin-left: 15%;
   }
+
+  .choice-status-positive {
+    position: relative;
+    right: -40px;
+    margin-left: 10%;
+    margin-right: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #22ad7a80;
+    border: 2.5px solid #1f1d59;
+  }
+
+  .info {
+    margin-left: 15%;
+    position: relative;
+    width: 25px;
+    top: -20px;
+  }
+
+  .student-name {
+    position: relative;
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+    color: #1f1d59;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: 3%;
+  }
+
+  .project-details {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3%;
+    margin-right: auto;
+  }
+
+  .project-details-inner {
+    background-color: #e2e6eb;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f1d59;
+    margin-right: 0.5rem;
+    margin-top: 5%;
+  }
+
+
 }
+
+
+
+
+
+
+
 
 
 // POP-UP END
