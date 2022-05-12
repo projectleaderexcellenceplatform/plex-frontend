@@ -763,7 +763,7 @@ h5 {
     margin-top: 1rem;
     position: fixed;
     width: 76px;
-    height: calc(100vh - 120px);
+    height: calc(88vh);
     background: $color1;
     border-left: 8px solid $color1;
     transition: 0.5s;
@@ -989,11 +989,10 @@ h5 {
   }
 
   .student-list-container {
-    height: calc(100vh - 460px);
+    height: calc(79vh);
     overflow: scroll;
     overflow-x: hidden;
-    padding: 0rem 1rem 0rem 0.8rem;
-    padding-bottom: 1rem;
+    padding: 1rem 1rem 1rem 0.8rem;
     margin-left: -12px;
 
     &::-webkit-scrollbar {

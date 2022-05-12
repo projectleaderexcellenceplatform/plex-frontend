@@ -40,23 +40,21 @@ const Choice = () => {
             {/* LIST */}
             <div className={"inner-right-body"}>
                 <div className={"student-list-container"}>
-                    <div className={"row pt-4 gy-4"}>
-                        {/*{[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
-                        {/*    return (*/}
-                        {/*        <div className={"col-3"}>*/}
-                        {/*            <ChoiceListGrid/>*/}
-                        {/*        </div>*/}
-                        {/*    )*/}
-                        {/*})}*/}
+                    {/*    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
+                    {/*        return (*/}
+                    {/*            <div className={"col-3"}>*/}
+                    {/*                <ChoiceListGrid/>*/}
+                    {/*            </div>*/}
+                    {/*        )*/}
+                    {/*    })}*/}
 
-                        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
-                            return (
-                                <div className={"col-12 w-100"}>
-                                    <ChoiceListCard/>
-                                </div>
-                            )
-                        })}
-                    </div>
+                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
+                        return (
+                            <div className={"col-12 w-100"}>
+                                <ChoiceListCard/>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
 
