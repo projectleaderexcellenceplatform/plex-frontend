@@ -671,6 +671,10 @@ h5 {
   flex: 0 0 auto;
   width: 95px;
   padding-right: 20px;
+  z-index: 10;
+}
+.layout-container .sidebar-container .hamburger {
+  display: none;
 }
 .layout-container .page-body {
   flex: 0 0 auto;
@@ -743,7 +747,7 @@ h5 {
   border-bottom-left-radius: 15px;
   margin-bottom: 1rem;
 }
-.sidebar-inner-container .navigation ul li a img {
+.sidebar-inner-container .navigation ul li img {
   z-index: 1;
   position: absolute;
   top: 50%;
@@ -859,6 +863,25 @@ h5 {
   border-radius: 8px;
 }
 
+.filter-container {
+  display: flex;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.filter-container .filter-inner-container {
+  display: flex;
+}
+.filter-container .select-container {
+  margin-top: 0.25rem !important;
+}
+.filter-container .filter-by {
+  display: flex;
+  margin-top: 0.25rem;
+}
 .filter-container label {
   font-weight: 500;
   color: #1f1d59;
@@ -908,20 +931,21 @@ h5 {
   background: #1f1d59;
   border-radius: 10px;
 }
-.inner-right-body .student-list-container {
+
+.student-list-container {
   height: 79vh;
   overflow: scroll;
   overflow-x: hidden;
   padding: 1rem 1rem 1rem 0.8rem;
   margin-left: -12px;
 }
-.inner-right-body .student-list-container::-webkit-scrollbar {
+.student-list-container::-webkit-scrollbar {
   width: 8px;
 }
-.inner-right-body .student-list-container::-webkit-scrollbar-track {
+.student-list-container::-webkit-scrollbar-track {
   background: #e2e6eb;
 }
-.inner-right-body .student-list-container::-webkit-scrollbar-thumb {
+.student-list-container::-webkit-scrollbar-thumb {
   background: #1f1d59;
   border-radius: 10px;
 }
@@ -993,6 +1017,7 @@ h5 {
   border-style: dashed;
   border-radius: 7px;
   padding: 1rem;
+  width: 100%;
 }
 .student-search-container input {
   border: 1px solid #1f1d59;
@@ -1030,6 +1055,80 @@ h5 {
   transform: translateY(-50%);
 }
 
+@media (max-width: 1240px) {
+  .student-search-container {
+    align-items: center;
+  }
+
+  .student-list-container {
+    align-items: center;
+  }
+
+  .layout-container {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 1240px) and (max-width: 930px) {
+  .student-search-container {
+    align-items: center;
+    width: 95%;
+    min-width: 370px;
+  }
+
+  .student-list-container {
+    position: absolute;
+    left: 5%;
+    align-items: center;
+    width: 94vw;
+    min-width: 480px;
+  }
+
+  .student-card {
+    height: 10vh;
+  }
+
+  .circle-initials {
+    display: none;
+  }
+
+  .plex-logo {
+    display: none;
+  }
+
+  .sidebar-container {
+    height: 5%;
+  }
+
+  .layout-container .sidebar-container .hamburger {
+    margin-top: 30%;
+    margin-left: 20%;
+    display: block;
+  }
+
+  .filter-container {
+    display: none;
+    margin-bottom: -1rem;
+    margin-top: -1.5rem;
+  }
+  .filter-container .select-container {
+    float: right;
+  }
+  .filter-container .filter-inner-container {
+    display: block;
+  }
+  .filter-container .filter-by {
+    display: none;
+  }
+  .filter-container button {
+    display: none;
+  }
+  .filter-container img {
+    display: none;
+  }
+  .filter-container label {
+    display: none;
+  }
+}
 .student-search-container-send-details {
   background-color: #eceef2;
   border: 1px solid #1f1d59;

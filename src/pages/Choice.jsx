@@ -22,23 +22,23 @@ const Choice = () => {
     return (
         <Layout>
 
-            <div className={"inner-right-body"}>
-                {/* TOP SEARCH */}
+            {/* TOP SEARCH */}
+            <div className={"student-search-container"}>
                 <StudentSearch/>
             </div>
 
-            {/* FILTER */}
-            <div>
-                <Filters
-                    activeBtn={activeBtn}
-                    setActiveBtn={setActiveBtn}
-                    activeSort={activeSort}
-                    setActiveSort={setActiveSort}
-                    filterOptions={filterOptions}></Filters>
-            </div>
+                {/* FILTER */}
+                <div>
+                    <Filters
+                        activeBtn={activeBtn}
+                        setActiveBtn={setActiveBtn}
+                        activeSort={activeSort}
+                        setActiveSort={setActiveSort}
+                        filterOptions={filterOptions}></Filters>
+                </div>
 
-            {/* LIST */}
-            <div className={"inner-right-body"}>
+                {/* LIST */}
+
                 <div className={"student-list-container"}>
                     {/*    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
                     {/*        return (*/}
@@ -50,14 +50,11 @@ const Choice = () => {
 
                     {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
                         return (
-                            <div className={"col-12 w-100"}>
-                                <ChoiceListCard/>
-                            </div>
+                            <ChoiceListCard/>
                         )
                     })}
                 </div>
-            </div>
-
+            {/*</div>*/}
         </Layout>
     )
 

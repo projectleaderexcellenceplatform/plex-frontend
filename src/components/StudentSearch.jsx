@@ -5,7 +5,7 @@ import search from "../assets/images/icons/search.svg"
 const StudentSearch = () => {
 
     return (
-        <div className={"student-search-container"}>
+        // <div className={"student-search-container"}>
             <div className={"row"}>
                     <div className="inp-cont">
                         <input
@@ -22,7 +22,7 @@ const StudentSearch = () => {
                 </div>
             </div>
 
-        </div>
+        // </div>
 
     )
 }
