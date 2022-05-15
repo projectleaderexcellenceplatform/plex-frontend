@@ -27,34 +27,40 @@ const Choice = () => {
                 <StudentSearch/>
             </div>
 
-                {/* FILTER */}
-                <div>
-                    <Filters
-                        activeBtn={activeBtn}
-                        setActiveBtn={setActiveBtn}
-                        activeSort={activeSort}
-                        setActiveSort={setActiveSort}
-                        filterOptions={filterOptions}></Filters>
-                </div>
+            {/* FILTER */}
+            <div>
+                <Filters
+                    activeBtn={activeBtn}
+                    setActiveBtn={setActiveBtn}
+                    activeSort={activeSort}
+                    setActiveSort={setActiveSort}
+                    filterOptions={filterOptions}></Filters>
+            </div>
 
-                {/* LIST */}
+            {/* LIST */}
 
-                <div className={"student-list-container"}>
-                    {/*    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
-                    {/*        return (*/}
-                    {/*            <div className={"col-3"}>*/}
-                    {/*                <ChoiceListGrid/>*/}
-                    {/*            </div>*/}
-                    {/*        )*/}
-                    {/*    })}*/}
+            <div className={"student-list-container"}>
 
+                {/*<div className={"student-list-container-grid"}>*/}
+                {/*    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
+                {/*        return (*/}
+                {/*            <div className={"student-list-container-inner"}>*/}
+                {/*                <ChoiceListGrid/>*/}
+                {/*            </div>*/}
+                {/*        )*/}
+                {/*    })}*/}
+                {/*</div>*/}
+
+                <div className={"student-list-container-list"}>
                     {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
                         return (
-                            <ChoiceListCard/>
+                                <ChoiceListCard/>
                         )
                     })}
                 </div>
-            {/*</div>*/}
+            </div>
+
+
         </Layout>
     )
 

@@ -77,14 +77,15 @@ const Sidebar = () => {
 
 
     return (
-        <div className="sidebar-inner-container">
+
+        <div className={toggleMenu ? "sidebar-inner-container-active" : "sidebar-inner-container"}>
             <img className={"plex-logo"} src={logo} alt=""/>
 
             {toggleMenu ?
                 <img
                     src={a_hamburger}
                     alt={""}
-                    className={"hamburger"}
+                    className={"a_hamburger"}
                     onClick={toggleNav}
                 /> :
                 <img
@@ -96,10 +97,10 @@ const Sidebar = () => {
             }
 
 
-            {(toggleMenu || screenWidth > 725) && (
+            {(toggleMenu || screenWidth > 930) && (
                 <div className="navigation">
 
-                    {(toggleMenu || screenWidth > 725) && (
+                    {(toggleMenu || screenWidth > 930) && (
                         <ul className={`py-2`}>
                             {navigations.map((item, i) => {
                                 return (

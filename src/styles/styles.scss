@@ -705,6 +705,10 @@ h5 {
       display: none;
     }
 
+    .a_hamburger {
+      display: none;
+    }
+
 
   }
 
@@ -761,6 +765,99 @@ h5 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.sidebar-inner-container-active {
+  min-height: 1px;
+  height: calc(100%);
+
+  .navigation {
+    margin-top: 1rem;
+    position: fixed;
+    width: 76px;
+    height: calc(88vh);
+    background: $color1;
+    border-left: 8px solid $color1;
+    transition: 0.5s;
+    border-radius: 10px;
+    // overflow: hidden;
+  }
+
+  .navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 1rem;
+
+    img {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-60%, -50%);
+    }
+
+
+  }
+
+  /* Curve outside */
+  .navigation ul li.activeClass a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 22%;
+    box-shadow: 11px 47px 0 5px #f4f4f4;
+    pointer-events: none;
+  }
+
+  .navigation ul li.activeClass a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 22%;
+    box-shadow: 7px -17px 0 -1px #f4f4f4;
+    pointer-events: none;
+  }
+
+  .navigation ul li.activeClass {
+    background: #f4f4f4;
+  }
+
+  .navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  .navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 60px;
+  }
+}
+
 
 .sidebar-inner-container {
   min-height: 1px;
@@ -948,9 +1045,9 @@ h5 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 
-.filter-inner-container {
-  display: flex;
-}
+  .filter-inner-container {
+    display: flex;
+  }
 
   .select-container {
     margin-top: 0.25rem !important;
@@ -1038,6 +1135,21 @@ h5 {
   &::-webkit-scrollbar-thumb {
     background: $color1;
     border-radius: 10px;
+  }
+
+  .student-list-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .student-list-container-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .student-list-container-inner {
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
 
@@ -1187,7 +1299,7 @@ h5 {
       align-items: center;
       width: 95%;
       min-width: 370px;
-
+      margin-top: 0.5rem;
     }
 
     .student-list-container {
@@ -1196,6 +1308,7 @@ h5 {
       align-items: center;
       width: 94vw;
       min-width: 480px;
+      margin-top: 1rem;
 
     }
 
@@ -1215,14 +1328,40 @@ h5 {
       height: 5%;
     }
 
-    .layout-container {
-      //display: block;
+    .layout-container .sidebar-container .hamburger {
+      display: block;
+      position: relative;
+      left: 30%;
+      top: 25%;
+      z-index: 10;
     }
 
-    .layout-container .sidebar-container .hamburger {
-      margin-top: 30%;
-      margin-left: 20%;
+    .layout-container .sidebar-container .a_hamburger {
       display: block;
+      position: relative;
+      left: 30%;
+      top: 25%;
+      z-index: 10;
+    }
+
+    .sidebar-inner-container {
+      height: 10vh;
+      width: 76px;
+      border-radius: 10px;
+    }
+
+
+    .layout-container .sidebar-inner-container-active {
+      height: 10vh;
+      width: 76px;
+      border-radius: 10px;
+      background-color: #1f1d59;
+
+
+      .navigation {
+        margin-top: 2rem;
+      }
+
     }
 
     .filter-container {
