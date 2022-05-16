@@ -1316,7 +1316,7 @@ h5 {
       height: 10vh;
     }
 
-    .circle-initials {
+    .student-card .circle-initials {
       display: none;
     }
 
@@ -1394,18 +1394,23 @@ h5 {
         display: none;
       }
     }
+  }
+}
 
-
+@media (max-width: 1400px) {
+  .student-grid .picture {
+    display: none;
   }
 
+  .student-list-container .student-list-container-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-  //.choice {
-  //  //display: grid;
-  //  margin-right: 1%;
-  //  margin-left: 15%;
-  //  //width: 50%;
-  //}
-
+@media (max-width: 680px) {
+  .student-list-container .student-list-container-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
@@ -1722,6 +1727,7 @@ h5 {
   display: flex;
 
   .row-up {
+    justify-content: space-between;
     --bs-gutter-x: 3 srem;
     --bs-gutter-y: 0;
     display: -ms-flexbox;
@@ -1746,6 +1752,9 @@ h5 {
     margin-left: calc(-0.5 * var(--bs-gutter-x));
   }
 
+.info-container {
+  display: flex;
+}
 
   .circle-initials {
     position: relative;
@@ -1765,15 +1774,12 @@ h5 {
 
   .picture {
     width: 85px;
-    margin-left: 15%;
   }
 
   .choice-status-positive {
     position: relative;
-    right: -40px;
     margin-left: 10%;
-    margin-right: 0px;
-    width: 25px;
+    width: 30px;
     height: 25px;
     border-radius: 50%;
     background-color: #22ad7a80;
@@ -1781,9 +1787,9 @@ h5 {
   }
 
   .info {
-    margin-left: 15%;
+    margin-left: 10%;
     position: relative;
-    width: 25px;
+    width: 32px;
     top: -20px;
   }
 

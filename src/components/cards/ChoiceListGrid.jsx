@@ -18,13 +18,15 @@ const ChoiceListCard = () => {
             <div className="row-up">
                 <div className={"circle-initials"}>AW</div>
                 <img className={"picture"} src={logo} alt={""}/>
-                <div className={"choice-status-positive"}/>
-                <img className={"info"} src={info} alt={""}/>
+                <div className={"info-container"}>
+                    <div className={"choice-status-positive"}/>
+                    <img className={"info"} src={info} alt={""}/>
+                </div>
             </div>
             <div className={"row-down"}>
-            <div className={"student-name"}>
-                ACH ter Wiel
-            </div>
+                <div className={"student-name"}>
+                    ACH ter Wiel
+                </div>
                 <div className={"project-details"}>
                     <div className={"project-details-inner"}>
                         S3
