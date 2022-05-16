@@ -1303,11 +1303,10 @@ h5 {
     }
 
     .student-list-container {
-      position: absolute;
-      left: 5%;
-      align-items: center;
-      width: 94vw;
-      min-width: 480px;
+      position: relative;
+      margin-left: 0%;
+      //width: 118%;
+      min-width: 500px;
       margin-top: 1rem;
 
     }
@@ -1332,7 +1331,7 @@ h5 {
       display: block;
       position: relative;
       left: 30%;
-      top: 25%;
+      top: 30%;
       z-index: 10;
     }
 
@@ -1340,7 +1339,7 @@ h5 {
       display: block;
       position: relative;
       left: 30%;
-      top: 25%;
+      top: 30%;
       z-index: 10;
     }
 
@@ -1365,7 +1364,6 @@ h5 {
     }
 
     .filter-container {
-      //TODO filter
       display: none;
       margin-bottom: -1rem;
       margin-top: -1.5rem;
@@ -1411,6 +1409,7 @@ h5 {
   .student-list-container .student-list-container-grid {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 
@@ -1752,9 +1751,9 @@ h5 {
     margin-left: calc(-0.5 * var(--bs-gutter-x));
   }
 
-.info-container {
-  display: flex;
-}
+  .info-container {
+    display: flex;
+  }
 
   .circle-initials {
     position: relative;
