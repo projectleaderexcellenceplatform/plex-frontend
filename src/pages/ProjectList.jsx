@@ -41,6 +41,7 @@ const ProjectList = ({
 	const [activeSort, setActiveSort] = useState(0);
 
 	const tagFilters = ["All", "UX/UI", "Code", "Research"];
+	const filterOptions = ["All", "UX/UI", "Code", "Research"];
 
 	if (popUp3) {
 		setTimeout(() => {
@@ -167,6 +168,7 @@ const ProjectList = ({
 						activeSort={activeSort}
 						setActiveSort={setActiveSort}
 						handleChange={handleChange}
+						filterOptions={filterOptions}
 					/>
 
 					{/* LIST */}

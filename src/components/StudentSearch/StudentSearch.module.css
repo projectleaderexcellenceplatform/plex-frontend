@@ -1,0 +1,50 @@
+.StudentSearchContainer {
+    background-color: #eceef2;
+    border: 1px solid #1f1d59;
+    border-style: dashed;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+input {
+    border: 1px solid #1f1d59;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+label {
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    font-size: 15px;
+    background: linear-gradient(180deg, rgb(236, 238, 242) 50%, rgb(255, 255, 255) 50%);
+    font-weight: 500;
+}
+
+.StudentSearchContainer .SearchContainer {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.SearchContainer .InpCont {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.SearchContainer .SearchIcon {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}

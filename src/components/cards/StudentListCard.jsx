@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 
-import avtar from "../../assets/images/avtar.svg";
-import info from "../../assets/images/icons/info.svg";
-
 const StudentListCard = (props) => {
     const latestProject = [props.project];
 

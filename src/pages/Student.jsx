@@ -47,6 +47,8 @@ const Student = () => {
         choice: 0,
     });
 
+    const filterOptions = ["All", "UX/UI", "Code", "Research"];
+
     const updateProjectId = (id, i) => {
         if (i === 0) {
             setChoice1(prevState => {
@@ -146,7 +148,7 @@ const Student = () => {
                         setActiveBtn={setActiveBtn}
                         activeSort={activeSort}
                         setActiveSort={setActiveSort}
-                        studentFilter
+                        filterOptions={filterOptions}
                     />
 
                     {/* LIST */}
