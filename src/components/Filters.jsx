@@ -11,16 +11,17 @@ const Filter = ({
 	setActiveSort,
 	studentFilter,
 	handleChange,
+	filterOptions
 }) => {
-	const filter_buttons = ["All", "UX/UI", "Code", "Research"];
+	const filter_buttons = filterOptions;
 
 	return (
-		<div className="filter-container d-flex justify-content-between align-items-end pb-2">
-			<div className="d-flex">
+		<div className="filter-container">
+			<div className="filter-inner-container">
 				<div>
 					<label htmlFor="Sort by">Sort by</label>
 					<br />
-					<select onChange={handleChange} className="mt-1">
+					<select onChange={handleChange} className="select-container">
 						<option selected disabled>
 							Order by ASC
 						</option>
@@ -32,7 +33,7 @@ const Filter = ({
 				</div>
 				<div className="ms-3">
 					<label htmlFor="Filter by">Filter by</label>
-					<div className="d-flex mt-1">
+					<div className="filter-by">
 						{filter_buttons.map((item, i) => {
 							return (
 								<button

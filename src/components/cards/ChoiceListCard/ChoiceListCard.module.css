@@ -1,0 +1,96 @@
+.StudentCard {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.StudentCard .Container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+.StudentCard .Container .CircleInitials {
+    position: relative;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: #1f1d59;
+    margin-left: 1.5%;
+}
+
+.StudentCard .Name {
+    position: relative;
+    margin-bottom: 0rem;
+    font-size: 0.875rem;
+    color: #1f1d59;
+    font-weight: 800;
+    margin-right: auto;
+    margin-left: 7%;
+}
+
+.StudentCard .VerticalLine {
+    border-left: 1px solid;
+    color: #e2e6eb;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.StudentCard .Information {
+    position: relative;
+    margin-bottom: 0rem;
+    display: flex;
+    margin-right: auto;
+    margin-left: 7%;
+}
+
+.StudentCard .StudentDetailsContainer {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3rem;
+
+}
+
+.StudentCard .StudentDetails {
+    background-color: #e2e6eb;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f1d59;
+    margin-right: 0.5rem;
+}
+
+.StudentCard .ChoiceStatus {
+    margin-left: auto;
+    margin-right: 1.5%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #22ad7a80;
+    border: 2px solid #1f1d59;
+}
+
+.StudentCard .Pointer {
+    cursor: pointer;
+}
