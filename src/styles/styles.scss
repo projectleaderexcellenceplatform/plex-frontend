@@ -1304,8 +1304,7 @@ h5 {
 
     .student-list-container {
       position: relative;
-      margin-left: 0%;
-      //width: 118%;
+      margin-left: -100px;
       min-width: 500px;
       margin-top: 1rem;
 
@@ -1405,7 +1404,7 @@ h5 {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 725px) {
   .student-list-container .student-list-container-grid {
     grid-template-columns: 1fr 1fr;
   }

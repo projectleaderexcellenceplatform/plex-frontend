@@ -41,23 +41,23 @@ const Choice = () => {
 
             <div className={"student-list-container"}>
 
-                <div className={"student-list-container-grid"}>
-                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
-                        return (
-                            <div className={"student-list-container-inner"}>
-                                <ChoiceListGrid/>
-                            </div>
-                        )
-                    })}
-                </div>
-
-                {/*<div className={"student-list-container-list"}>*/}
+                {/*<div className={"student-list-container-grid"}>*/}
                 {/*    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {*/}
                 {/*        return (*/}
-                {/*                <ChoiceListCard/>*/}
+                {/*            <div className={"student-list-container-inner"}>*/}
+                {/*                <ChoiceListGrid/>*/}
+                {/*            </div>*/}
                 {/*        )*/}
                 {/*    })}*/}
                 {/*</div>*/}
+
+                <div className={"student-list-container-list"}>
+                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item) => {
+                        return (
+                                <ChoiceListCard/>
+                        )
+                    })}
+                </div>
             </div>
 
 
